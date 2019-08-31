@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var booksCollectionView: UICollectionView!
     
     let numberofItemPerRow:CGFloat = 3.0 //number of item per row
-    let spacing:CGFloat = 8 //leading + trailling
+    let spacing:CGFloat = 16 //leading + trailling
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         
         let layout = booksCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.minimumLineSpacing = 5
-        layout.itemSize = CGSize(width: itemWidth, height: 311)
+        layout.itemSize = CGSize(width: itemWidth, height: 322)
         
     }
 }
